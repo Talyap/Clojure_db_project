@@ -1,0 +1,31 @@
+CREATE_TABLE grades123 (name string,last string,hw_grade number)
+DROP_TABLE grades123
+CREATE_TABLE students (name string,last string,age number,height number)
+INSERT_INTO students (Talya panama 25 163.5)
+INSERT_INTO students (Talya ann 24 160)
+INSERT_INTO students (Ori naba 26 178)
+INSERT_INTO students (Orid na 28 153)
+INSERT_INTO students (shay ban 21 167)
+INSERT_INTO students (shay cohen 36 146.5)
+INSERT_INTO students (shlomo gn 76 169)
+INSERT_INTO students (moshe gf 23 146)
+INSERT_INTO students (zipora cohen 5 163)
+INSERT_INTO students (osnat cohen 106 182.5)
+INSERT_INTO students (zing zang 120 186)
+CREATE_TABLE teachers (name string,last string,age number)
+INSERT_INTO teachers (israel israely 47)
+INSERT_INTO teachers (baruch israely 35)
+INSERT_INTO teachers (yaakov israely 532 52)
+INSERT_INTO teachers (esav slom_zion 532 46)
+INSERT_INTO teachers (yohanan hamatbil 64)
+CREATE_TABLE coffee (kind string,amount number)
+INSERT_INTO coffee (black 21)
+INSERT_INTO coffee (decaf 12)
+INSERT_INTO coffee (espresso 16)
+SELECT name,last FROM students WHERE age = 26 OR age = 25 OR age = 24
+SELECT name FROM students WHERE age = 28
+DELETE FROM students WHERE name = zing OR age > 100
+DELETE FROM students WHERE name = zipora
+UPDATE teachers SET age=1 WHERE last = zang
+UPDATE students SET age=123 WHERE name <> Talya
+UPDATE students SET age=34 WHERE name = Talya OR name = talya
